@@ -1,3 +1,6 @@
+<style>
+    <?php include_once 'includes/header.css' ?>
+</style>
 <div id="home">
     <nav>
         <ul>
