@@ -6,3 +6,7 @@
     function register(){
 
     };
+
+    function signOut(){
+        
+    }
