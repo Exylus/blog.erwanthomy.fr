@@ -8,7 +8,7 @@
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body class="bg-dark">
     <div class="container d-flex justify-content-center">
         <div class="shadow p-4 mb-5 mt-5 bg-body-tertiary rounded" style="width: 600px;">
             <h2 class="text-center">Sign in</h2>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="text-center">
                     <p><a class="link" href="#">Forgot your password?</a></p>
-                    <button type="submit" onclick="login()" class="btn btn-primary">
+                    <button type="submit" onclick="location.href='post.php'" class="btn btn-primary">
                         Sign in
                     </button>
                 </div>

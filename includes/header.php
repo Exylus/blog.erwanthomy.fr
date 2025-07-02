@@ -18,7 +18,7 @@
 <body>
     <div id="home">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
-            <a class="navbar-brand" href="#">MiniBlog</a>
+            <a class="navbar-brand" href="#"><i class="bi bi-columns-gap"></i> BibiBlog</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
                 <span class="navbar-toggler-icon"></span>
@@ -26,13 +26,14 @@
 
             <div class="collapse navbar-collapse" id="navContent">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="post.php"><i class="bi bi-house-door-fill"></i></a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
                     <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.php"><i class="bi bi-person-circle"></i></a></li>
                     <?php
                     // TODO - Remplacer par une vraie vérification de connexion
                     if (true) {
-                        echo '<li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal">Sign Out</a></li>';
+                        echo '<li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal"><i class="bi bi-box-arrow-right"></i></a></li>';
                     } else {
                         echo '<li class="nav-item"><a class="nav-link" href="login.php">Sign In</a></li>';
                     }
@@ -54,7 +55,7 @@
                     </div>
                     <div class="modal-footer justify-content-center border-0">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-primary" onclick="signOut()">Sign out</button>
+                        <button type="button" class="btn btn-primary" onclick="location.href='index.php'">Sign out</button>
                     </div>
                 </div>
             </div>

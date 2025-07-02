@@ -10,3 +10,7 @@
     function signOut(){
         
     }
+
+    function publishPost(){
+        
+    }

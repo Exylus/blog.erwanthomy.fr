@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
-<body>
+<body class="bg-dark">
     <div class="container d-flex justify-content-center">
         <div class="shadow p-4 mb-5 mt-5 bg-body-tertiary rounded" style="width: 600px;">
             <h2 class="text-center">Create account</h2>
@@ -58,7 +58,7 @@
                     </label>
                 </div>
                 <div class="text-center">
-                    <button type="submit" onclick="register()" class="btn btn-primary mt-4">
+                    <button type="submit" onclick="location.href='post.php'" class="btn btn-primary mt-4">
                         Register
                     </button>
                     <p class="mt-5"><a class="link" href="login.php">I already have an account</a></p>
@@ -67,5 +67,7 @@
         </div>
     </div>
 </body>
-
+<div>
+    
+</div>
 </html>
