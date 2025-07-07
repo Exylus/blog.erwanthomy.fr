@@ -3,8 +3,25 @@ if (
     !empty($_POST['name']) && !empty($_POST['dob']) && !empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['repeat_password']) && isset($_POST['checkDefault'])
 ) {
     if ($_POST['password'] === $_POST['repeat_password']) {
+        require_once 'config.php'; // Connexion
+
+        // Hachage du mot de passe
+        $hashedPassword = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+        // Insertion
+        $sql = "INSERT INTO users (name, dob, username, password) VALUES (:name, :dob, :username, :password)";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute([
+            'name' => $_POST['name'],
+            'dob' => $_POST['dob'],
+            'username' => $_POST['username'],
+            'password' => $hashedPassword
+        ]);
+
+        // Redirection
         header("Location: post.php");
         exit();
+
     } else {
         $error = "Passwords do not match.";
     }
@@ -70,7 +87,7 @@ if (
                         I agree agree all statements in <a class="link" href="#">Terms of service</a>
                     </label>
                 </div>
-                
+
                 <!-- Error message -->
                 <?php if (!empty($error)): ?>
                     <div class="mt-3 mb-3 p-2 text-danger text-center">

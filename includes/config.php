@@ -1,7 +1,15 @@
 <?php
 // config.php
 $host = 'localhost';
-$db   = 'blog.erwanthomy.fr';
-$user = 'erwan';
-$pass = 'ghYW5hpRY6n';
-$charset = 'utf8mb4';
+$dbname = 'mini_blog';
+$user = 'root';
+$pass = '';
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $pass);
+    // Active les erreurs SQL
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Connexion échouée : " . $e->getMessage());
+}
+?>

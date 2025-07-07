@@ -18,7 +18,7 @@
 <body>
     <div id="home">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
-            <a class="navbar-brand" href="#"><i class="bi bi-columns-gap"></i> BibiBlog</a>
+            <a class="navbar-brand" href="#"><i class="bi bi-columns-gap"></i> <strong>BibiBlog</strong></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
                 <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,6 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="post.php"><i class="bi bi-house-door-fill"></i></a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
                     <li class="nav-item"><a class="nav-link" href="profile.php"><i class="bi bi-person-circle"></i></a></li>
                     <?php
                     // TODO - Remplacer par une vraie vérification de connexion
