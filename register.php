@@ -3,7 +3,7 @@ if (
     !empty($_POST['name']) && !empty($_POST['dob']) && !empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['repeat_password']) && isset($_POST['checkDefault'])
 ) {
     if ($_POST['password'] === $_POST['repeat_password']) {
-        require_once 'config.php'; // Connexion
+        require_once 'includes/config.php'; // Connexion
 
         // Hachage du mot de passe
         $hashedPassword = password_hash($_POST['password'], PASSWORD_DEFAULT);
