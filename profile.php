@@ -1,6 +1,7 @@
 <?php
 $page_title = "Profile";
 include "includes/header.php";
+include "sidebar.php";
 ?>
 <div class="d-flex flex-column align-items-center">
     <i class="bi bi-person-circle" style="font-size: 150px;"></i>
